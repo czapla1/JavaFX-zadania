@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.TableController">
+   <children>
+      <TableView fx:id="tb1" prefHeight="200.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="tbId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="tbImie" prefWidth="75.0" text="imie" />
+            <TableColumn fx:id="tbNazwisko" prefWidth="130.0" text="nazwisko" />
+            <TableColumn fx:id="tbPensja" prefWidth="130.0" text="pensja" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnShow" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#showTable" text="show" />
+      <Button fx:id="btnInsert" layoutX="74.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#insertTable" text="insert" />
+      <Button fx:id="btnUpdate" layoutX="151.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#updateTable" text="update" />
+      <Button fx:id="btnDelete" layoutX="242.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#deleteTable" text="delete" />
+      <Button fx:id="btnExit" layoutX="322.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#exit" text="exit" />
+      <TextField fx:id="tfImie" disable="true" layoutX="133.0" layoutY="276.0" />
+      <TextField fx:id="tfNazwisko" disable="true" layoutX="133.0" layoutY="320.0" />
+      <TextField fx:id="tfPensja" disable="true" layoutX="133.0" layoutY="364.0" />
+      <Label fx:id="lblImie" disable="true" layoutX="27.0" layoutY="276.0" text="Imie" />
+      <Label fx:id="lblNazwisko" disable="true" layoutX="23.0" layoutY="342.0" text="Nazwisko" />
+      <Label fx:id="lblPensja" disable="true" layoutX="23.0" layoutY="386.0" text="Pensja" />
+      <Button fx:id="btnUpIns" disable="true" layoutX="412.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#updateInsert" text="insert" />
+      <Label fx:id="lblInfo" disable="true" layoutX="133.0" layoutY="244.0" text="Wpisz dane" />
+      <Button fx:id="btnUpdate2" disable="true" layoutX="500.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#update2" text="Update" />
+   </children>
+</AnchorPane>
